@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <!--
+    <script type="text/javascript">
+      var filterConfigs = {
+  "shop":"alcoeats.myshopify.com",
+  "filters":{
+    "dropdowns":[
+      {
+        "type":"blog",
+        "title":"By Meal",
+        "cid":"blog_filter",
+        "options":[
+          {
+            "label":"Snacks",
+            "value":"81961975960"
+          },
+          {
+            "label":"Breakfast",
+            "value":"85522776299"
+          },
+          {
+            "label":"Main Dishes",
+            "value":"84731855083"
+          },
+          {
+            "label":"Beverages",
+            "value":"85647884523"
+          },
+          {
+            "label":"Dessert",
+            "value":"85647982827"
+          }
+        ]
+      },
+      {
+        "type":"tags",
+        "title":"Diet Type",
+        "cid":"tag_filter",
+        "options":[
+          {
+            "label":"Keto",
+            "value":"Keto"
+          },
+          {
+            "label":"Paleo",
+            "value":"Paleo"
+          },
+          {
+            "label":"Gluten Free",
+            "value":"Gluten Free"
+          },
+          {
+            "label":"Vegan",
+            "value":"Vegan"
+          },
+          {
+            "label":"Vegetarian",
+            "value":"Vegetarian"
+          },
+          {
+            "label":"Dairy Free",
+            "value":"Dairy Free"
+          },
+          {
+            "label":"Grain Free",
+            "value":"Grain Free"
+          },
+          {
+            "label":"Whole 30",
+            "value":"Whole 30"
+          },
+          {
+            "label":"Low Carb",
+            "value":"Low Carb"
+          }
+        ]
+      },
+      {
+        "type":"tags",
+        "title":"Alcoeats Products",
+        "cid":"tag_filter_1",
+        "options":[
+          {
+            "label":"Indian Gravies",
+            "value":"Indian Gravies"
+          },
+          {
+            "label":"Coffee",
+            "value":"Coffee"
+          },
+          {
+            "label":"Cashews",
+            "value":"Cashews"
+          },
+          {
+            "label":"Masala",
+            "value":"Masala"
+          }
+        ]
+      }
+    ]
+  },
+  "cta":{
+    "title":"New Recipes",
+    "content":"Seeking to spice things up in the kitchen? Browse our comprehensive collection of clean and delicious Alcoeats recipes. Whether you’re keto, paleo, vegetarian, gluten-free or following the Alcoeats Diet, there’s something here for you. Use the recipe filter tool to find a recipe that fits your diet.",
+    "links":[
+      {
+        "label":"Snacks",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Alcoeats_Snacks_500x.jpg?v=1663312201",
+        "value":"81961975960"
+      },
+      {
+        "label":"Breakfast",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_500x.jpg?v=1663312400",
+        "value":"85522776299"
+      },
+      {
+        "label":"Main Dishes",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_1_500x.jpg?v=1663312477",
+        "value":"84731855083"
+      },
+      {
+        "label":"Beverages",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_2_500x.jpg?v=1663313281",
+        "value":"85647884523"
+      },
+      {
+        "label":"Dessert",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_3_500x.jpg?v=1663313462",
+        "value":"85647982827"
+      },
+      {
+        "label":"Keto",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_4_500x.jpg?v=1663313548",
+        "value":"85647687915"
+      },
+      {
+        "label":"Paleo",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_5_500x.jpg?v=1663313659",
+        "value":"85652996331"
+      }
+    ]
+  },
+  "sections":[
+    {
+      "title":"Latest Recipes",
+      "articles":[
+        {
+          "id":"gid://shopify/Article/587007230187",
+          "title":"Roasted Paneer Tikka Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Paneer_tikka_1600x.jpg?v=1662984642"
+          },
+          "publishedAt":"2022-09-16 02:36:25 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/roasted-paneer-tikka-without-oven",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        },
+        {
+          "id":"gid://shopify/Article/588741771499",
+          "title":"Homemade Potato Smiles Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/potato_smiles_Recipe_1600x.jpg?v=1663575362"
+          },
+          "publishedAt":"2022-09-19 04:16:23 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/homemade-potato-smiles-recipe",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        },
+        {
+          "id":"gid://shopify/Article/588149096683",
+          "title":"Mutton Curry Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Mutton_Curry_af2daae3-5183-400e-afea-4621254f18b7_1600x.jpg?v=1663581351"
+          },
+          "publishedAt":"2022-09-19 05:26:21 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/make-indian-mutton-curry-gravy",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        }
+      ]
+    },
+    {
+      "title":"Trending",
+      "articles":[
+        {
+          "id":"gid://shopify/Article/588232753387",
+          "title":"Grilled Kidney Beans Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Grilled_Kidney_beans-03_1600x.jpg?v=1663581601"
+          },
+          "publishedAt":"2022-09-19 05:31:31 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/spicy-grilled-beans-recipe",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        },
+        {
+          "id":"gid://shopify/Article/586976624875",
+          "title":"Spicy Lamb Curry Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Spicy_Lamb_Curry_1600x.jpg?v=1663581992"
+          },
+          "publishedAt":"2022-09-19 05:27:17 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/new-spicy-lamb-curry-recipe",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        },
+        {
+          "id":"gid://shopify/Article/588710871275",
+          "title":"PAV BHAJI RECIPE",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Pav_1600x.png?v=1662376068"
+          },
+          "publishedAt":"2022-09-19 04:15:32 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/pav-bhaji-masala-recipe",
+          "onlineStoreUrl":"https://alcoeats.com/"
+        }
+      ]
+    },
+    {
+      "title":"Keto Recipes",
+      "articles":[
+        
+      ]
+    },
+    {
+      "title":"Paleo Recipes",
+      "articles":[
+        
+      ]
+    }
+  ]
+}
+
+    </script>
+    -->
+    <script type="text/javascript">
+  var filterConfigs = {
+  "shop":"alcoeats.myshopify.com",
+  "filters":{
+    "dropdowns":[
+      {
+        "type":"blog",
+        "title":"By Meal",
+        "cid":"blog_filter",
+        "options":[
+          {
+            "label":"Snacks",
+            "value":"81961975960"
+          },
+          {
+            "label":"Breakfasts",
+            "value":"85522776299"
+          },
+          {
+            "label":"Main Dishes",
+            "value":"84731855083"
+          },
+          {
+            "label":"Beverages",
+            "value":"85647884523"
+          },
+          {
+            "label":"Desserts",
+            "value":"85647982827"
+          }
+        ]
+      },
+      {
+        "type":"blog",
+        "title":"Alcoeats Products",
+        "cid":"blog_filter",
+        "options":[
+          {
+            "label":"Cashews",
+            "value":"89069158635"
+          },
+          {
+            "label":"Masala",
+            "value":"89023611115"
+          },
+          {
+            "label":"Indian Gravies",
+            "value":"89023447275"
+          },
+          {
+            "label":"Coffee",
+            "value":"89023414507"
+          }
+        ]
+      },
+      {
+        "type":"blog",
+        "title":"Diet Type",
+        "cid":"blog_filter",
+        "options":[
+          {
+            "label":"Keto",
+            "value":"85647687915"
+          },
+          {
+            "label":"Paleo",
+            "value":"85652996331"
+          },
+          {
+            "label":"Vegan",
+            "value":"79024652440"
+          },
+          {
+            "label":"Gluten Free",
+            "value":"89047564523"
+          },
+          {
+            "label":"Vegetarian",
+            "value":"79025045656"
+          },
+          {
+            "label":"Dairy Free",
+            "value":"79025111192"
+          },
+          {
+            "label":"Grain Free",
+            "value":"79025143960"
+          },
+          {
+            "label":"Whole 30",
+            "value":"79025701016"
+          },
+          {
+            "label":"Low Carb",
+            "value":"80108322968"
+          }
+        ]
+      }
+    ]
+  },
+  "cta":{
+    "title":"Alcoeats Recipes",
+    "content":"A foodie at heart will want to explore delicious food, we make it easy for you. Although you may think culinary art is a complicated affair, the notion just got busted by Alcoeats. You can eat clean, tasty, and healthy food at your fingertips. When it is homemade, the more, the merrier. Say no to cheat diets. Alcoeats provides keto-friendly, paleo-friendly, gluten-free, vegan, vegetarian, chicken and meat recipes that are easy to read online and you can print them as well. Surprise your loved ones with a range of food items using the recipe filter tool. Get your taste buds ready for lip-smacking foodie delight.",
+    "links":[
+      {
+        "label":"Snacks",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Alcoeats_Snacks_500x.jpg?v=1663312201",
+        "value":"81961975960"
+      },
+      {
+        "label":"Breakfasts",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_500x.jpg?v=1663312400",
+        "value":"85522776299"
+      },
+      {
+        "label":"Main Dishes",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_1_500x.jpg?v=1663312477",
+        "value":"84731855083"
+      },
+      {
+        "label":"Beverages",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_2_500x.jpg?v=1663313281",
+        "value":"85647884523"
+      },
+      {
+        "label":"Desserts",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_3_500x.jpg?v=1663313462",
+        "value":"85647982827"
+      },
+      {
+        "label":"Keto",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_4_500x.jpg?v=1663313548",
+        "value":"85647687915"
+      },
+      {
+        "label":"Paleo",
+        "image":"//cdn.shopify.com/s/files/1/0524/2113/2440/files/Untitled_design_5_500x.jpg?v=1663313659",
+        "value":"85652996331"
+      }
+    ]
+  },
+  "sections":[
+    {
+      "title":"Latest Recipes",
+      "articles":[
+        {
+          "id":"gid://shopify/Article/587007230187",
+          "title":"Roasted Paneer Tikka Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/paneer_tikka_1600x.jpg?v=1663912816"
+          },
+          "publishedAt":"2022-09-26 09:10:44 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/roasted-paneer-tikka-without-oven",
+          "onlineStoreUrl":"/blogs/snacks/roasted-paneer-tikka-without-oven"
+        },
+        {
+          "id":"gid://shopify/Article/588741771499",
+          "title":"Homemade Potato Smiles Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/potato_smiles_Recipe_2_1600x.jpg?v=1663738627"
+          },
+          "publishedAt":"2022-09-26 09:11:00 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/homemade-potato-smiles-recipe",
+          "onlineStoreUrl":"/blogs/snacks/homemade-potato-smiles-recipe"
+        },
+        {
+          "id":"gid://shopify/Article/588149096683",
+          "title":"MUTTON CURRY RECIPE",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Blog_Mutton_Curry-01_1600x.jpg?v=1663747301"
+          },
+          "publishedAt":"2022-09-26 09:10:42 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/make-indian-mutton-curry-gravy",
+          "onlineStoreUrl":"/blogs/main-dishes/make-indian-mutton-curry-gravy"
+        }
+      ]
+    },
+    {
+      "title":"Trending",
+      "articles":[
+        {
+          "id":"gid://shopify/Article/588232753387",
+          "title":"Grilled Kidney Beans Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Blog_Grilled_Kidney_Beans-02_1600x.jpg?v=1663746300"
+          },
+          "publishedAt":"2022-09-26 09:11:01 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/spicy-grilled-beans-recipe",
+          "onlineStoreUrl":"/blogs/main-dishes/spicy-grilled-beans-recipe"
+        },
+        {
+          "id":"gid://shopify/Article/586976624875",
+          "title":"Spicy Lamb Curry Recipe",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Blog_Spicy_Lamb_Curry_1600x.jpg?v=1663747024"
+          },
+          "publishedAt":"2022-09-26 09:11:02 -0500",
+          "tags":[
+            
+          ],
+          "handle":"main-dishes/new-spicy-lamb-curry-recipe",
+          "onlineStoreUrl":"/blogs/main-dishes/new-spicy-lamb-curry-recipe"
+        },
+        {
+          "id":"gid://shopify/Article/588710871275",
+          "title":"PAV BHAJI RECIPE",
+          "image":{
+            "url":"//cdn.shopify.com/s/files/1/0524/2113/2440/articles/Pav_Bhaji_Recipe_3_1600x.jpg?v=1663662371"
+          },
+          "publishedAt":"2022-09-26 09:10:42 -0500",
+          "tags":[
+            
+          ],
+          "handle":"snacks/pav-bhaji-masala-recipe",
+          "onlineStoreUrl":"/blogs/snacks/pav-bhaji-masala-recipe"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="blogfilter"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
