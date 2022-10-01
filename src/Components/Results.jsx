@@ -1,7 +1,14 @@
 import './css/filters.css';
+<<<<<<< HEAD
 const Filresult = (Articles) => {
     Articles = JSON.parse(Articles.Articles);
   
+=======
+
+const Filresult = (Articles) => {
+    Articles = JSON.parse(Articles.Articles);
+
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     const Article = (props) => {
         const dimg = props.db;
         const vdimg = "0 0 "+(parseInt(props.dw)+1)+" "+(parseInt(props.dh)+1);
@@ -63,10 +70,17 @@ const Filresult = (Articles) => {
                         url= {articleOne.onlineStoreUrl}
                         dw="1500"
                         dh="750"
+<<<<<<< HEAD
                         db={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
                         mw="1500"
                         mh="849"
                         mb={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
+=======
+                        db={articleOne.image.url}
+                        mw="1500"
+                        mh="650"
+                        mb={articleOne.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                     />
                 </div>
             </div>
@@ -87,10 +101,17 @@ const Filresult = (Articles) => {
                             url={articleOne.onlineStoreUrl}
                             dw="750"
                             dh="500"
+<<<<<<< HEAD
                             db={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
                             mw="1500"
                             mh="849"
                             mb={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
+=======
+                            db={articleOne.image.url}
+                            mw="1500"
+                            mh="650"
+                            mb={articleOne.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                         />
                     </div>
                     <div className="inner_half_banner">
@@ -99,10 +120,17 @@ const Filresult = (Articles) => {
                             url={articleTwo.onlineStoreUrl}
                             dw="750"
                             dh="500"
+<<<<<<< HEAD
                             db={((articleTwo.image === undefined) || (articleTwo.image === 'undefined') || (articleTwo.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleTwo.image.url}
                             mw="1500"
                             mh="849"
                             mb={((articleTwo.image === undefined) || (articleTwo.image === 'undefined') || (articleTwo.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleTwo.image.url}
+=======
+                            db={articleTwo.image.url}
+                            mw="1500"
+                            mh="650"
+                            mb={articleTwo.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                         />
                     </div>
                 </div>
@@ -124,10 +152,17 @@ const Filresult = (Articles) => {
                         url={articleOne.onlineStoreUrl}
                         dw="1500"
                         dh="750"
+<<<<<<< HEAD
                         db={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
                         mw="1500"
                         mh="849"
                         mb={((articleOne.image === undefined) || (articleOne.image === 'undefined') || (articleOne.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleOne.image.url}
+=======
+                        db={articleOne.image.url}
+                        mw="1500"
+                        mh="650"
+                        mb={articleOne.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                     />
                 </div>
                 <div className="half_banner">
@@ -137,10 +172,17 @@ const Filresult = (Articles) => {
                             url={articleTwo.onlineStoreUrl}
                             dw="750"
                             dh="500"
+<<<<<<< HEAD
                             db={((articleTwo.image === undefined) || (articleTwo.image === 'undefined') || (articleTwo.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleTwo.image.url}
                             mw="1500"
                             mh="849"
                             mb={((articleTwo.image === undefined) || (articleTwo.image === 'undefined') || (articleTwo.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleTwo.image.url}
+=======
+                            db={articleTwo.image.url}
+                            mw="1500"
+                            mh="650"
+                            mb={articleTwo.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                         />
                     </div>
                     <div className="inner_half_banner">
@@ -149,10 +191,17 @@ const Filresult = (Articles) => {
                             url={articleThree.onlineStoreUrl}
                             dw="750"
                             dh="500"
+<<<<<<< HEAD
                             db={((articleThree.image === undefined) || (articleThree.image === 'undefined') || (articleThree.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleThree.image.url}
                             mw="1500"
                             mh="849"
                             mb={((articleThree.image === undefined) || (articleThree.image === 'undefined') || (articleThree.image === null)) ? 'https://cdn.shopify.com/s/files/1/0524/2113/2440/files/placeholder_16c659a0-827a-47df-be00-b4d924703a72.png' : articleThree.image.url}
+=======
+                            db={articleThree.image.url}
+                            mw="1500"
+                            mh="650"
+                            mb={articleThree.image.url}
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                         />
                     </div>
                 </div>
@@ -179,9 +228,15 @@ const Filresult = (Articles) => {
         return chunks;
     }
 
+<<<<<<< HEAD
     const ElementsHTML = (Articles) => {
         let length = (Articles.Articles.length > 3) ? 3 : Articles.Articles.length;
         let chunks = splitArrayIntoChunks(Articles.Articles,length);
+=======
+    const ElementsHTML = () => {
+        let length = (Articles.length > 3) ? 3 : Articles.length;
+        let chunks = splitArrayIntoChunks(Articles,length);
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
         const html = chunks.map((row) =>{
             const Ele = () => {
                 if(row.length === 1){

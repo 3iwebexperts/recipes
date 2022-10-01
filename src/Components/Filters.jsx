@@ -2,7 +2,10 @@ import './css/filters.css';
 import React, { useRef } from 'react';
 import Filresult from "./Results";
 import FetchArticles from './FetchArticles';
+<<<<<<< HEAD
 import { useState } from 'react';
+=======
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
 
 const Filter = (config) => {
   const initialFormData = {};
@@ -10,12 +13,20 @@ const Filter = (config) => {
     initialFormData[dropdown.cid] = ''
   });
   initialFormData['q'] = '';
+<<<<<<< HEAD
   const [errorMessage,setErrorMessage] = useState('Loading...');
 
   const myRef = useRef(null);
   // const executeScroll = () => myRef.current.scrollIntoView({
   //   behavior: 'smooth', block: 'start'
   // }); // run this function from an event handler or pass it to useEffect to execute scroll
+=======
+
+  const myRef = useRef(null);
+  const executeScroll = () => myRef.current.scrollIntoView({
+    behavior: 'smooth', block: 'start'
+  }); // run this function from an event handler or pass it to useEffect to execute scroll
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
 
 
   const initialTypes = {};
@@ -55,6 +66,7 @@ const Filter = (config) => {
       if((filterData.length === 0) && ((str === '') || (str === null)) && ((tags === null) || (tags.length === 0))){
         filterData = articles;
       }
+<<<<<<< HEAD
       if(filterData && filterData.length > 0){
         setErrorMessage('Loading...');
       }else{
@@ -63,11 +75,19 @@ const Filter = (config) => {
     }else{
       filterData = articles;
       setErrorMessage('No results found from filter!');
+=======
+    }else{
+      filterData = articles;
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     }
     setAns(JSON.stringify(filterData));
   }
 
+<<<<<<< HEAD
   const NoResultRender = (error) => {
+=======
+  const NoResultRender = () => {
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     const sections = config.config.sections;
     let hasItems = false;
     if((typeof formData !== undefined) && (typeof formData !== 'undefined') && (typeof formData !== null) && (typeof formData !== '')){
@@ -84,7 +104,11 @@ const Filter = (config) => {
           <div className="page-width">
             <div className="fil_lists_inner">
               <div className="recipe_items">
+<<<<<<< HEAD
                 <p>{error.error}</p>
+=======
+                <p>No results found from filter!</p>
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
               </div>
             </div>
           </div>
@@ -145,7 +169,11 @@ const Filter = (config) => {
     let hasItems = false;
     if((typeof formData !== undefined) && (typeof formData !== 'undefined') && (typeof formData !== null) && (typeof formData !== '')){
       Object.keys(formData).forEach((key) => {
+<<<<<<< HEAD
         if((key != 'q') && (formData[key] !== '') && (formData[key] !== null)){
+=======
+        if((formData[key] !== '') && (formData[key] !== null)){
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
           hasItems = true;
           return key;
         }
@@ -160,7 +188,11 @@ const Filter = (config) => {
     }else{
       setShowError(true);
     }
+<<<<<<< HEAD
     //executeScroll();
+=======
+    executeScroll();
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
   },[handleSubmit]);
 
   return(
@@ -212,6 +244,10 @@ const Filter = (config) => {
                       defaultValue={initialFormData[dropdown.cid]}
                       className="facet-filters__sort select__select caption-large"
                       onChange={handleChange}
+<<<<<<< HEAD
+=======
+                      required
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
                     >
                       <option value=''>{dropdown.title}</option>
                       {dropdown.options.map((option,i) => 
@@ -229,7 +265,10 @@ const Filter = (config) => {
             <div className="fil_item">
               <button type="reset" value="Reset" className="button bottom_button_label">clear</button>
             </div>
+<<<<<<< HEAD
 {/*             
+=======
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
             <div className="fil_item search_frm">
               <div className="search-modal modal__content" role="dialog" aria-modal="true" aria-label="Search">
                 <div className="modal-overlay"></div>
@@ -252,7 +291,11 @@ const Filter = (config) => {
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
             </div> */}
+=======
+            </div>
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
           </div>
         </div>
       </form>
@@ -268,7 +311,11 @@ const Filter = (config) => {
         </div>
       </section>
     :
+<<<<<<< HEAD
       <NoResultRender error={errorMessage} />
+=======
+      <NoResultRender />
+>>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     }
     </>
   );
