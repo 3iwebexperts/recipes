@@ -10,10 +10,7 @@
     "react": "^18.2.0",
     "react-async": "^10.0.1",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-hooks-paginator": "^0.5.0",
-=======
->>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     "react-scripts": "5.0.1",
     "react-select": "^5.4.0",
     "web-vitals": "^2.1.4"

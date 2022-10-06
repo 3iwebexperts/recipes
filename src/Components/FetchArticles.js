@@ -1,10 +1,6 @@
 const FetchArticles = async(blogId,shop,endCursor,articles) => {
     let query = '';
-<<<<<<< HEAD
     let limit = 250;
-=======
-    let limit = 5;
->>>>>>> 46b516425af7c98c4c1c435beb5340875b6efeaa
     if(endCursor.length <= 0){
         query = `{
             blog(id: "gid://shopify/Blog/${blogId}") {
